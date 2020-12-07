@@ -1,0 +1,29 @@
+asdfadsfsdas
+<%= simple_form_for(person, local: true) do |form| %>
+  <% if person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+        <% person.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= form.text_field :name %>
+
+
+    <div class="col-sm-3">
+    <div class="form-group has-success">
+        <input type="text" value="Success" class="form-control" />
+    </div>
+    </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+qwewqe

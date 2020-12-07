@@ -1,0 +1,86 @@
+
+app/mailers/application_mailer.rb,67
+class ApplicationMailer < ActionMailer::BaseApplicationMailer1,0
+
+app/models/person.rb,44
+class Person < ApplicationRecordPerson1,0
+
+app/models/application_record.rb,67
+class ApplicationRecord < ActiveRecord::BaseApplicationRecord1,0
+
+app/jobs/application_job.rb,58
+class ApplicationJob < ActiveJob::BaseApplicationJob1,0
+
+app/controllers/application_controller.rb,79
+class ApplicationController < ActionController::BaseApplicationController1,0
+
+app/controllers/people_controller.rb,304
+class PeopleController < ApplicationControllerPeopleController1,0
+  def indexindex6,0
+  def showshow12,0
+  def newnew16,0
+  def editedit21,0
+  def createcreate26,0
+  def updateupdate42,0
+  def destroydestroy56,0
+    def set_personset_person66,0
+    def person_paramsperson_params71,0
+
+app/helpers/people_helper.rb,37
+module PeopleHelperPeopleHelper1,0
+
+app/helpers/application_helper.rb,47
+module ApplicationHelperApplicationHelper1,0
+
+app/channels/application_cable/connection.rb,195
+module ApplicationCableApplicationCable1,0
+  class Connection < ActionCable::Connection::BaseConnection2,0
+  class Connection < ActionCable::Connection::BaseApplicationCable::Connection2,0
+
+app/channels/application_cable/channel.rb,177
+module ApplicationCableApplicationCable1,0
+  class Channel < ActionCable::Channel::BaseChannel2,0
+  class Channel < ActionCable::Channel::BaseApplicationCable::Channel2,0
+
+test/models/person_test.rb,58
+class PersonTest < ActiveSupport::TestCasePersonTest3,0
+
+test/system/people_test.rb,60
+class PeopleTest < ApplicationSystemTestCasePeopleTest3,0
+
+test/application_system_test_case.rb,95
+class ApplicationSystemTestCase < ActionDispatch::SystemTestCaseApplicationSystemTestCase3,0
+
+test/test_helper.rb,101
+class ActiveSupport::TestCaseTestCase5,0
+class ActiveSupport::TestCaseActiveSupport::TestCase5,0
+
+test/controllers/people_controller_test.rb,86
+class PeopleControllerTest < ActionDispatch::IntegrationTestPeopleControllerTest3,0
+
+test/channels/application_cable/connection_test.rb,206
+class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCaseConnectionTest3,0
+class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCaseApplicationCable::ConnectionTest3,0
+
+config/application.rb,143
+module NojsNojs9,0
+  class Application < Rails::ApplicationApplication10,0
+  class Application < Rails::ApplicationNojs::Application10,0
+
+node_modules/intercooler/test/gen_tests.rb,24
+VARIANTS =VARIANTS1,0
+
+node_modules/intercooler/www/_plugins/nav_tags.rb,407
+module JekyllJekyll3,0
+  class ActiveTag < Liquid::TagActiveTag4,0
+  class ActiveTag < Liquid::TagJekyll::ActiveTag4,0
+    def initialize(tag_name, text, tokens)initialize5,0
+    def render(context)render9,0
+  class HideTag < Liquid::TagHideTag14,0
+  class HideTag < Liquid::TagJekyll::HideTag14,0
+    def initialize(tag_name, text, tokens)initialize15,0
+    def render(context)render19,0
+
+db/migrate/20201207010915_create_people.rb,91
+class CreatePeople < ActiveRecord::Migration[6.0]CreatePeople1,0
+  def changechange2,0
