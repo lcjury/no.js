@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  *= require bootstrap3
- *= require ./demo
- *= require ./gsdk.css
  */
+
+ .mb-1 {
+     margin-bottom: 10px;
+ }

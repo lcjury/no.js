@@ -1,29 +1,25 @@
-asdfadsfsdas
-<%= simple_form_for(person, local: true) do |form| %>
-  <% if person.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+<%= simple_form_for(person) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :age %>
 
-      <ul>
-        <% person.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-    <%= form.text_field :name %>
-
-
-    <div class="col-sm-3">
-    <div class="form-group has-success">
-        <input type="text" value="Success" class="form-control" />
-    </div>
+    <div class="text-right mb-1">
+        <button
+            class="btn btn-sm btn-success"
+            ic-post-to="/people"
+            ic-target="#<%= f.options[:html][:id] %>"
+            ic-replace-target="true"> Añadir mascota </button>
     </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="row">
+    <%= f.fields_for :animals do |pet| %>
+        <div class="col-sm-6 animal-form">
+            <%= pet.input :name %>
+            <%= pet.input :breed, collection: Animal.breds %>
+            <%= pet.input :_destroy, as: :boolean, input_html: { 'ic-action': 'fadeOut', 'ic-action-target': 'closest .animal-form' } %>
+            <hr>
+        </div>
+    <% end %>
+    </div>
+
+    <%= f.submit class: 'btn btn-block btn-lg btn-primary' %>
 <% end %>
-
-qwewqe

@@ -31,3 +31,18 @@
 
 en:
   hello: "Hello world"
+  helpers:
+    submit:
+      create: "Crear %{model}"
+      update: "Actualizar asdasd"
+  activerecord:
+    models:
+      person: Persona
+      animal: Animal
+    attributes:
+      person:
+        name: nombre
+        age: edad
+      animal:
+        name: nombre
+        breed: raza
